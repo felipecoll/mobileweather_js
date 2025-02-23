@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+    <title>On site/live weather</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/img/logo.png" alt="Logo" class="logo">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search location...">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="header-buttons">
+            <button class="icon-button" id="location-btn">
+                <i class="fas fa-location-dot"></i>
+            </button>
+            <button class="icon-button" id="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="weather-grid">
+        <div class="weather-card">
+            <h3>Temperatura actual</h3>
+            <div class="weather-value">23°C</div>
+        </div>
+        <div class="weather-card">
+            <h3>Sensacion termica</h3>
+            <div class="weather-value">23°C</div>
+        </div>
+        <div class="weather-card">
+            <h3>Lluvia</h3>
+            <div class="weather-value">30%</div>
+        </div>
+        <div class="weather-card">
+            <h3>Viento</h3>
+            <div class="weather-value">15km/h</div>
+        </div>
+        <div class="weather-card">
+            <h3>Indice UV</h3>
+            <div class="weather-value">6</div>
+        </div>
+    </main>
+
+    <div class="bottom-buttons">
+        <button class="action-button" id="alerts-btn">Activar alertas</button>
+        <button class="action-button" id="reset-btn">Resetear ubicacion</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
